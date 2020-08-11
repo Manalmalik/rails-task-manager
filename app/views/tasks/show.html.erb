@@ -1,0 +1,8 @@
+<div>
+  <h1><%= @task.title %> <br></h1>
+  <%= @task.details %>  <br>
+  <% if @task.completed == false %>
+  <p> This task is not completed yet</p>
+  <% end %>
+  <%= link_to "Edit task", "#{@task[:id]}/edit" %>
+</div>
